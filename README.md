@@ -6,10 +6,10 @@ Similar to the "View gridlines" functionality in Microsoft Word, this extension 
 
 [Install extension from Chrome Web Store]()
 
-![](images/gridlines.png | width=600)
+<img src="images/gridlines.png" width="600">
 
-![](images/icon.png | width=600)
+<img src="images/icon.png" width="600">
 
-![](images/toggle.png | width=600)
+<img src="images/toggle.png" width="600">
 
-![](images/promo.png | width=600)
+<img src="images/promo.png" width="600">
