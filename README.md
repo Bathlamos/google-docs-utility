@@ -6,9 +6,15 @@ Similar to the "View gridlines" functionality in Microsoft Word, this extension 
 
 [Install extension from Chrome Web Store]()
 
-<div style="display: flex;flex-direction:column;align-items:center">
-<img src="images/gridlines.png" width="600">
-<img src="images/icon.png" width="600">
-<img src="images/toggle.png" width="600">
-<img src="images/promo.png" width="600">
-</div>
+<p align="center">
+    <img src="images/gridlines.png" width="600">
+</p>
+<p align="center">
+    <img src="images/icon.png" width="600">
+</p>
+<p align="center">
+    <img src="images/toggle.png" width="600">
+</p>
+<p align="center">
+    <img src="images/promo.png" width="600">
+</p>
