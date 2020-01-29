@@ -10,6 +10,7 @@ body.google-docs-utility-override .kix-tablerenderer-table:after {
     content: "\a0";
     display: block;
     position: absolute;
+    pointer-events: none;
 }
 
 /* Cell right */
