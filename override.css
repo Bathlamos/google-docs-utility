@@ -1,0 +1,3 @@
+body.google-docs-utility-override .kix-tablerenderer-td  {
+    outline: 1px dashed #00000038;
+}
