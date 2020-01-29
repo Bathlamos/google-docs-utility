@@ -1,4 +1,4 @@
-![alt text](images/logo.svg)
+![](images/logo.svg)
 
 ### View invisible table outlines as gridlines
 
@@ -6,10 +6,10 @@ Similar to the "View gridlines" functionality in Microsoft Word, this extension 
 
 [Install extension from Chrome Web Store]()
 
-![alt text](images/gridlines.png)
+![](images/gridlines.png | width=600)
 
-![alt text](images/icon.png)
+![](images/icon.png | width=600)
 
-![alt text](images/toggle.png)
+![](images/toggle.png | width=600)
 
-![alt text](images/promo.png)
+![](images/promo.png | width=600)
