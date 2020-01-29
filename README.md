@@ -15,6 +15,10 @@ Similar to the "View gridlines" functionality in Microsoft Word, this extension 
 <p align="center">
     <img src="images/toggle.png" width="600">
 </p>
+<br />
+<br />
+<br />
+<br />
 <p align="center">
     <img src="images/promo.png" width="600">
 </p>
