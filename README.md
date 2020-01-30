@@ -10,11 +10,11 @@ Similar to the "View gridlines" functionality in Microsoft Word, this extension 
     <img src="images/gridlines.png" width="600">
 </p>
 
-<h2 align="center">Create Table</h2>
+<h3 align="center">Create Table</h3>
 <p align="center">
     <img src="images/create-gridlines.gif" width="725">
 </p>
-<h2 align="center">Activate and deactivate gridlines</h2>
+<h3 align="center">Activate and deactivate gridlines</h3>
 <p align="center">
     <img src="images/enabling-disabling.gif" width="725">
 </p>
