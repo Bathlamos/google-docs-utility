@@ -1,5 +1,6 @@
 {
     "name": "View Google Docs Gridlines",
+    "short_name": "Google Docs Gridlines",
     "version": "0.1",
     "description": "View invisible table outlines as gridlines",
     "manifest_version": 2,
@@ -15,7 +16,7 @@
         }
     ],
     "icons": {
-        "128": "icon/icon-128.png"
+        "128": "icon/chrome-web-store-icon.png"
     },
     "browser_action": {
         "default_icon": {
