@@ -1,7 +1,7 @@
 {
     "name": "View Google Docs Gridlines",
     "short_name": "Google Docs Gridlines",
-    "version": "0.1",
+    "version": "0.2",
     "description": "View invisible table outlines as gridlines",
     "manifest_version": 2,
     "background": {

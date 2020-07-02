@@ -1,46 +1,48 @@
-body.google-docs-utility-override .kix-tablerenderer-td,
-body.google-docs-utility-override .kix-tablerenderer-table {
-    position: relative;
-}
+@media screen {
+    body.google-docs-utility-override .kix-tablerenderer-td,
+    body.google-docs-utility-override .kix-tablerenderer-table {
+        position: relative;
+    }
 
-body.google-docs-utility-override .kix-tablerenderer-td:before,
-body.google-docs-utility-override .kix-tablerenderer-td:after,
-body.google-docs-utility-override .kix-tablerenderer-table:before,
-body.google-docs-utility-override .kix-tablerenderer-table:after {
-    content: "\a0";
-    display: block;
-    position: absolute;
-    pointer-events: none;
-}
+    body.google-docs-utility-override .kix-tablerenderer-td:before,
+    body.google-docs-utility-override .kix-tablerenderer-td:after,
+    body.google-docs-utility-override .kix-tablerenderer-table:before,
+    body.google-docs-utility-override .kix-tablerenderer-table:after {
+        content: "\a0";
+        display: block;
+        position: absolute;
+        pointer-events: none;
+    }
 
-/* Cell right */
-body.google-docs-utility-override .kix-tablerenderer-td:before {
-    right: -1px;
-    bottom: 0;
-    top: 0;
-    border-right: 1px dashed #00000038;
-}
+    /* Cell right */
+    body.google-docs-utility-override .kix-tablerenderer-td:before {
+        right: -1px;
+        bottom: 0;
+        top: 0;
+        border-right: 1px dashed #00000038;
+    }
 
-/* Cell bottom */
-body.google-docs-utility-override .kix-tablerenderer-td:after {
-    right: 0;
-    left: 0;
-    bottom: -1px;
-    border-bottom: 1px dashed #00000038;
-}
+    /* Cell bottom */
+    body.google-docs-utility-override .kix-tablerenderer-td:after {
+        right: 0;
+        left: 0;
+        bottom: -1px;
+        border-bottom: 1px dashed #00000038;
+    }
 
-/* Table left */
-body.google-docs-utility-override .kix-tablerenderer-table:before {
-    left: 0;
-    bottom: 0;
-    top: 0;
-    border-left: 1px dashed #00000038;
-}
+    /* Table left */
+    body.google-docs-utility-override .kix-tablerenderer-table:before {
+        left: 0;
+        bottom: 0;
+        top: 0;
+        border-left: 1px dashed #00000038;
+    }
 
-/* Table top */
-body.google-docs-utility-override .kix-tablerenderer-table:after {
-    left: 0;
-    right: 0;
-    top: 0;
-    border-top: 1px dashed #00000038;
+    /* Table top */
+    body.google-docs-utility-override .kix-tablerenderer-table:after {
+        left: 0;
+        right: 0;
+        top: 0;
+        border-top: 1px dashed #00000038;
+    }
 }
