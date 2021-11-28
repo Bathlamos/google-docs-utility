@@ -1,6 +1,6 @@
 // Canvas-based Google Docs:
 //   After May 2021, Google Docs makes a slow transition from HTML rendering to canvas rendering
-//   We hijack, or monkey patch, key canvas methods to detect invisible lines and style them as dotted lines instead
+//   We monkey patch key canvas methods to detect invisible lines and style them as dotted lines instead
 
 const clazz = 'google-docs-utility-override' // duplicated in content.js
 
