@@ -1,35 +1,36 @@
 {
-    "name": "View Google Docs Gridlines",
-    "short_name": "Google Docs Gridlines",
-    "version": "0.2",
-    "description": "View invisible table outlines as gridlines",
-    "manifest_version": 2,
-    "background": {
-        "scripts": ["background.js"]
+  "name": "View Google Docs Gridlines",
+  "short_name": "Google Docs Gridlines",
+  "version": "0.3",
+  "description": "View invisible table outlines as gridlines",
+  "manifest_version": 2,
+  "background": {
+    "scripts": ["background.js"]
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://docs.google.com/document/*"],
+      "js": ["content.js"],
+      "css": ["override.css"],
+      "run_at": "document_end"
     },
-    "content_scripts": [
-        {
-          "matches": [ "https://docs.google.com/document/*" ],
-          "js": [ "content.js" ],
-          "css": [ "override.css" ],
-          "run_at": "document_end"
-        }
-    ],
-    "icons": {
-        "128": "icon/chrome-web-store-icon.png"
+    {
+      "matches": ["https://docs.google.com/document/*"],
+      "js": ["preload.js"],
+      "run_at": "document_start"
+    }
+  ],
+  "icons": {
+    "128": "icon/chrome-web-store-icon.png"
+  },
+  "browser_action": {
+    "default_icon": {
+      "16": "icon/icon-activated-16.png",
+      "24": "icon/icon-activated-24.png",
+      "32": "icon/icon-activated-32.png"
     },
-    "browser_action": {
-        "default_icon": {
-            "16": "icon/icon-activated-16.png",
-            "24": "icon/icon-activated-24.png",
-            "32": "icon/icon-activated-32.png"
-        },
-        "default_title": "View Google Docs Gridlines",
-        "default_popup": "popup.html"
-    },
-    "permissions": [
-        "tabs",
-        "storage",
-        "https://docs.google.com/document/*"
-    ]
-  }
+    "default_title": "View Google Docs Gridlines",
+    "default_popup": "popup.html"
+  },
+  "permissions": ["tabs", "storage", "https://docs.google.com/document/*"]
+}
