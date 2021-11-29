@@ -44,6 +44,7 @@ elt.innerHTML = `
           ]
           combos.forEach(([a, b], i) => {
             const s = 10 // sensitivity: some lines are very close to one another
+            // TODO: find overlapping lines of different height
             const key = JSON.stringify([a.map(e => Math.round(e / s) * s), b.map(e => Math.round(e / s) * s)])
             if (!cache[key]) { // don't draw overlapping lines
               if (i <= 1){
@@ -52,7 +53,7 @@ elt.innerHTML = `
                 context.lineTo(...b.map(e => e - 1))
               } else {
                 context.moveTo(...a)
-              context.lineTo(...b)
+                context.lineTo(...b)
               }
               cache[key] = true
             }

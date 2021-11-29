@@ -27,7 +27,6 @@ const resizeWindow = (windowId, delta) =>
 // The most reliable I've found to trigger a re-render of the canvas element
 // is to change the size of the window. Dispatching events does nothing.
 // As such, we change the height by a single pixel back-and-forth
-let shouldExpand = false // Toggles whether to expand or contract the window
 const triggerCanvasRerender = async () => {
   const tabs = await findTabs()
   const windowIds = tabs.reduce((acc, inc) => {
@@ -35,8 +34,12 @@ const triggerCanvasRerender = async () => {
     return acc
   }, {})
 
-  await Promise.all(Object.keys(windowIds).map(windowId => resizeWindow(+windowId, shouldExpand ? 1 : -1)))
-  shouldExpand = !shouldExpand
+  await Promise.all(
+    Object.keys(windowIds).map(async windowId => {
+      await resizeWindow(+windowId, -1)
+      await resizeWindow(+windowId, 1)
+    })
+  )
 }
 
 // Insert into all existing tabs,
